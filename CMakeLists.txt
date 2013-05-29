@@ -20,3 +20,19 @@ cmake_minimum_required(VERSION 2.8)
 
 project(MaNGOS)
 set(MANGOS_VERSION 0.17)
+
+set(CMAKE_MODULE_PATH
+  ${CMAKE_MODULE_PATH}
+  ${CMAKE_SOURCE_DIR}/cmake
+)
+
+
+
+message("CMAKE_MODULE_PATH: ${CMAKE_MODULE_PATH}")
+
+
+
+add_subdirectory(src)
+# if(SQL)
+#   add_subdirectory(sql)
+# endif()

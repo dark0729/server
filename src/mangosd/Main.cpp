@@ -21,6 +21,9 @@
 /// \file
 
 
+#include "SystemConfig.h"
+
+
 
 /// Launch the mangos server
 extern int main(int argc, char** argv)

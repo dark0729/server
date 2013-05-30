@@ -19,6 +19,11 @@
 #ifndef MANGOS_SYSTEMCONFIG_H
 #define MANGOS_SYSTEMCONFIG_H
 
+#ifndef _PACKAGENAME
+#define _PACKAGENAME "MaNGOS"
+#endif
+
+#include "Platform/Define.h"
 
 
 #endif

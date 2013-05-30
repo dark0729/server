@@ -16,22 +16,6 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #
 
-set(EXECUTABLE_NAME mangosd)
+set(LIBRARY_NAME framework)
 
-set(EXECUTABLE_SRCS
-    Main.cpp
-   )
 
-if(WIN32)
-  # add resource file to windows build
-  set(EXECUTABLE_SRCS ${EXECUTABLE_SRCS} mangosd.rc)
-endif()
-
-include_directories(
-  ${CMAKE_SOURCE_DIR}/src/framework
-  ${CMAKE_BINARY_DIR}/src/shared
-)
-
-add_executable(${EXECUTABLE_NAME}
-  ${EXECUTABLE_SRCS}
-)

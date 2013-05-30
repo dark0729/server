@@ -27,7 +27,7 @@ if(WIN32)
 endif()
 
 
-
+add_subdirectory(framework)
 add_subdirectory(shared)
 
 

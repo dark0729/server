@@ -26,9 +26,12 @@ set(CMAKE_MODULE_PATH
   ${CMAKE_SOURCE_DIR}/cmake
 )
 
+# define all options here
+option(DEBUG                "Debug mode"                            OFF)
+option(TBB_USE_EXTERNAL     "Use external TBB"                      OFF)
+option(USE_STD_MALLOC       "Use standard malloc instead of TBB"    OFF)
+option(ACE_USE_EXTERNAL     "Use external ACE"                      OFF)
 
-
-message("CMAKE_MODULE_PATH: ${CMAKE_MODULE_PATH}")
 
 
 

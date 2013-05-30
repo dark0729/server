@@ -16,25 +16,8 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-/// \addtogroup mangosd Mangos Daemon
-/// @{
-/// \file
+#ifndef MANGOS_COMPILERDEFS_H
+#define MANGOS_COMPILERDEFS_H
 
 
-#include "SystemConfig.h"
-
-
-
-/// Launch the mangos server
-extern int main(int argc, char** argv)
-{
-    ///- Command line parsing
-    //char const* cfg_file = _MANGOSD_CONFIG;
-
-    char const* options = ":a:c:s:";
-}
-
-
-
-
-/// @}
+#endif

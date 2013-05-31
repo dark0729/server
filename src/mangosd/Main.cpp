@@ -24,14 +24,19 @@
 #include "SystemConfig.h"
 
 
+#include <iostream>
 
 /// Launch the mangos server
 extern int main(int argc, char** argv)
 {
     ///- Command line parsing
-    //char const* cfg_file = _MANGOSD_CONFIG;
+    char const* cfg_file = _MANGOSD_CONFIG;
 
     char const* options = ":a:c:s:";
+
+	std::cout << "MANGOS_ENDIAN: " << MANGOS_ENDIAN << " _ENDIAN_STRING:" << _ENDIAN_STRING << std::endl;
+	std::cout << "ARCHITECTURE: " << ARCHITECTURE << std::endl;
+	std::cout << "_ENDIAN_PLATFORM: " << _ENDIAN_PLATFORM << std::endl;
 }
 
 

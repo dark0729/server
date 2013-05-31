@@ -28,4 +28,15 @@
 
 #include "Platform/CompilerDefs.h"
 
+#define MANGOS_LITTLEENDIAN 0
+#define MANGOS_BIGENDIAN    1
+
+#if !defined(MANGOS_ENDIAN)
+#  if defined (ACE_BIG_ENDIAN)
+#    define MANGOS_ENDIAN MANGOS_BIGENDIAN
+#  else // ACE_BYTE_ORDER != ACE_BIG_ENDIAN
+#    define MANGOS_ENDIAN MANGOS_LITTLEENDIAN
+#  endif // ACE_BYTE_ORDER
+#endif // MANGOS_ENDIAN
+
 #endif // MANGOS_DEFINE_H

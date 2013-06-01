@@ -35,3 +35,8 @@ include_directories(
 add_executable(${EXECUTABLE_NAME}
   ${EXECUTABLE_SRCS}
 )
+
+
+target_link_libraries(${EXECUTABLE_NAME}
+  ${ACE_LIBRARIES}
+)

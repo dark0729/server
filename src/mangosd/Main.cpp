@@ -24,6 +24,10 @@
 #include "SystemConfig.h"
 
 
+
+#include <ace/Get_Opt.h>
+
+
 #include <iostream>
 
 /// Launch the mangos server
@@ -33,6 +37,8 @@ extern int main(int argc, char** argv)
     char const* cfg_file = _MANGOSD_CONFIG;
 
     char const* options = ":a:c:s:";
+
+	ACE_Get_Opt cmd_opts(argc, argv, options);
 
 	std::cout << "MANGOS_ENDIAN: " << MANGOS_ENDIAN << " _ENDIAN_STRING:" << _ENDIAN_STRING << std::endl;
 	std::cout << "ARCHITECTURE: " << ARCHITECTURE << std::endl;
